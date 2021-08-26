@@ -1,0 +1,185 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+}
+
+body .all .container {
+  padding: 5px 10px 0px 10px;
+}
+
+.content-wrapper .content-row {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+
+.content-wrapper .content-row .content-item {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 142%;
+  display: inline-block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 4px;
+}
+
+.content-wrapper .content-row .content-item a {
+  display: block;
+  border: 1px solid #DDDDDD;
+  border-radius: 3px;
+  padding: 7px 0;
+  text-align: center;
+  font-size: 26px;
+  text-decoration: none;
+  color: #555555;
+  background-color: #EEEEEE;
+  text-shadow: 1px 1px 0 #FFFFFF;
+  font-weight: bold;
+  height: 45px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.content-wrapper .content-row .content-item a.touppercase, .content-wrapper .content-row .content-item a.tolowercase {
+  font-size: 22px;
+  padding: 5px 0;
+}
+
+.content-wrapper .content-row .object {
+  margin-top: 48px;
+}
+
+.content-wrapper .content-row .object a {
+  font-size: 20px;
+  position: relative;
+  padding: 3px 0;
+  height: 32px;
+}
+
+.content-wrapper .content-row .object a .emoji {
+  position: absolute;
+  top: -48px;
+  left: calc(50% - 40px);
+  width: 80px;
+  text-align: center;
+  font-size: 38px;
+}
+
+.content-wrapper.uppercase .huruf a {
+  text-transform: uppercase;
+}
+
+.content-wrapper.lowercase .huruf a {
+  text-transform: lowercase;
+}
+
+.text-hilight {
+  color: #EE0011;
+}
+
+.content-hilight span span {
+  color: #EE0011;
+}
+
+.shake:hover {
+  -webkit-animation: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+          animation: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-perspective: 1000px;
+          perspective: 1000px;
+}
+
+@-webkit-keyframes shake {
+  10%, 90% {
+    -webkit-transform: translate3d(-1px, 0, 0);
+            transform: translate3d(-1px, 0, 0);
+  }
+  20%, 80% {
+    -webkit-transform: translate3d(2px, 0, 0);
+            transform: translate3d(2px, 0, 0);
+  }
+  30%, 50%, 70% {
+    -webkit-transform: translate3d(-4px, 0, 0);
+            transform: translate3d(-4px, 0, 0);
+  }
+  40%, 60% {
+    -webkit-transform: translate3d(4px, 0, 0);
+            transform: translate3d(4px, 0, 0);
+  }
+}
+
+@keyframes shake {
+  10%, 90% {
+    -webkit-transform: translate3d(-1px, 0, 0);
+            transform: translate3d(-1px, 0, 0);
+  }
+  20%, 80% {
+    -webkit-transform: translate3d(2px, 0, 0);
+            transform: translate3d(2px, 0, 0);
+  }
+  30%, 50%, 70% {
+    -webkit-transform: translate3d(-4px, 0, 0);
+            transform: translate3d(-4px, 0, 0);
+  }
+  40%, 60% {
+    -webkit-transform: translate3d(4px, 0, 0);
+            transform: translate3d(4px, 0, 0);
+  }
+}
+
+.menu {
+  padding: 10px 0;
+  position: relative;
+  font-size: 11px;
+}
+
+.menu ul.tab, .menu ul.mode {
+  list-style-type: none;
+  display: block;
+  margin: 0;
+  padding: 0 10px;
+  border-bottom: 1px solid #CCCCCC;
+}
+
+.menu ul.tab li, .menu ul.mode li {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  border: solid #CCCCCC;
+  border-width: 1px 1px 0 1px;
+  background-color: #EEEEEE;
+  margin-bottom: -5px;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  overflow: hidden;
+}
+
+.menu ul.tab li a, .menu ul.mode li a {
+  text-decoration: none;
+  color: #555555;
+  padding: 7px 10px;
+  display: block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.menu ul.tab li.active, .menu ul.mode li.active {
+  background-color: #FFFFFF;
+}
+
+.menu ul.mode {
+  float: right;
+}
+/*# sourceMappingURL=style.css.map */
